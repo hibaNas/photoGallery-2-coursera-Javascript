@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+    <link rel="stylesheet" href="photoGallery.css">
+	
+</head>
+
+
+<body id="body" onload="initImage()" > 
+    <!-- the onload event -->
+
+	<div id="image" ></div>
+
+	<!-- used onkeyup instead of onfocus and onkeydown instead of unblur  for keybord users-->
+     <!-- keep both events inmouseleave and on mouseover of mouse users -->
+	 <img class="preview" src="https://lp-cms-production.imgix.net/features/2010/07/jebel-toubkal-morocco-c62e517742e1.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=23&dpr=4" 
+     alt="a mountain in morocco"  onmouseover="upDate(this)"   onmouseleave="unDo()" onkeyup="upDate(this)" >
+      <img class="preview" src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/03/Moroccan-souk-filled-with-goods.jpg" alt="a market in morocco" onkeyup="upDate(this)"  onmouseover="upDate(this)"   onmouseleave="unDo()">
+      <img class="preview" src="https://getwallpapers.com/wallpaper/full/b/7/9/998932-best-morocco-wallpaper-3000x1674-hd-1080p.jpg" alt="morrocan desert"   onkeyup="upDate(this)" onmouseover="upDate(this)"   onmouseleave="unDo()">
+      <br>
+      <img class="preview" src="https://www.morocco-discovery.com/photos/morocco-imperial-cities-08-days-tour-from-marrakech/06.jpg" alt="morocan smile"  onkeyup="upDate(this)"  onmouseover="upDate(this)"   onmouseleave="unDo()">
+      <img class="preview" src="https://www.thespruceeats.com/thmb/mPBPBfzoE0g9tHVE7lEyXZUQiDM=/3867x0/filters:no_upscale():max_bytes(150000):strip_icc()/mintteaGettyImages-153314510-56ebda845f9b581f34531faf.jpg"  onkeyup="upDate(this)" alt="moroccan tea"   onmouseover="upDate(this)"   onmouseleave="unDo()">
+      <img class="preview" src="https://res.cloudinary.com/wegowordpress/images/f_auto,q_auto/v1586090668/Riad-Fes-Maya-by-Aurelia-from-The-Daily-Travel-Pill-Edited-by-me/Riad-Fes-Maya-by-Aurelia-from-The-Daily-Travel-Pill-Edited-by-me.jpg"  onkeyup="upDate(this)" alt="moroccan architecture"   onmouseover="upDate(this)"   onmouseleave="unDo()" onkeydown="unDo()">
+
+      <script src="photoGallery.js"> </script>
+</body>
+</html>
